@@ -1,3 +1,5 @@
+package caseclass
+
 import org.scalatest.matchers.must.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 
@@ -5,8 +7,8 @@ class FizzBuzzSpec extends AnyWordSpec with Matchers {
 
   "FizzBuzz" should {
 
-    "be empty when not divisible by 3 or 5" in {
-      FizzBuzz(2).value mustBe ""
+    "be the number supplied when not divisible by 3 or 5" in {
+      FizzBuzz(2).value mustBe "2"
     }
 
     "be Fizz when divisible by 3" in {
